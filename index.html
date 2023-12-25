@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech Funding Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      background-image: url("file:///C:/Users/ASTORE/Desktop/Fintech-AdobeStock_458613594-2048x1038.jpeg");
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #1b548e;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      color: #ffd700;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      margin: 0 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffd700;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    ol {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .get-started {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    form {
+      margin-top: 40px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input, select {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.3s ease;
+      outline: none;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      font-size: 18px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" id="logo" href="#">Your Logo</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <p>Fintech funding platform is a new generation of funding and financial transactions instead of traditional banks and old types of funding.</p>
+    <ol>
+      <li>Fintech</li>
+      <li>Lending</li>
+      <li>Insurtech</li>
+      <li>Payments</li>
+    </ol>
+
+    <div class="get-started">
+      <p>Get started</p>
+    </div>
+
+    <form>
+      <label for="username">User name</label>
+      <input type="text" id="username" required>
+
+      <label for="lastname">Last name</label>
+      <input type="text" id="lastname" required>
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" required>
+
+      <label for="interests">What's your interest?</label>
+      <select id="interests" required>
+        <option value="" selected disabled>Type</option>
+        <option value="Fintech">Fintech</option>
+        <option value="Lending">Lending</option>
+        <option value="Insurtech">Insurtech</option>
+        <option value="Payments">Payments</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script src="JS/bb.js"></script>
+</body>
+</html>
